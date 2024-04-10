@@ -1,11 +1,10 @@
+import { useAppDispatch } from "hooks/redux-hooks";
 import useAuth from "hooks/useAuth";
-import React from "react";
-import { useDispatch } from "react-redux";
 import { Navigate } from "react-router-dom";
 import { removeUser } from "store/slices/userSlice";
 
 const Homepage = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const { isAuth, email } = useAuth();
 
   return isAuth ? (

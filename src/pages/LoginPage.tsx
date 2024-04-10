@@ -1,5 +1,4 @@
 import { Login } from "components/Login";
-import React from "react";
 import { Link } from "react-router-dom";
 
 const LoginPage = () => {

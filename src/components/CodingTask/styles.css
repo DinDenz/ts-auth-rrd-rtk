@@ -1,0 +1,5 @@
+.poduct-block {
+  display: flex;
+  gap: 10px;
+  color: rgb(200, 250, 200);
+}

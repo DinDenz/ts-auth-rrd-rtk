@@ -7,12 +7,15 @@ import { QuestionForm } from "components/QuestionForm";
 import { Improve } from "components/Improve";
 import { ImproveReducer } from "components/ImproveReducer";
 import { ItemsBlock } from "components/CodingTask/ItemsBlock";
+import { Question4 } from "components/Question4";
+import { Timer } from "components/Timer/Timer";
 
 const LoginPage = () => {
   return (
     <>
       <div>
         <h1>Login Page</h1>
+        <Timer />
         <Login />
         <p>
           Or
@@ -29,6 +32,7 @@ const LoginPage = () => {
       <ImproveReducer />
       <br />
       <ItemsBlock />
+      <Question4 />
     </>
   );
 };

@@ -1,30 +1,10 @@
-import { FC, useEffect, useRef, useState } from "react";
-import "./timer.css";
+import { useEffect, useState } from "react";
 
 const START_TIMER = 0;
 
-export const Timer: FC = () => {
+export const Timer = () => {
   const [time, setTime] = useState(START_TIMER);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
-  /*   const timerId = useRef<ReturnType<typeof setInterval> | null>(null);
-
-  useEffect(() => {
-    if (isTimerRunning) {
-      timerId.current = setInterval(() => {
-        setTime((prev) => prev + 1);
-      }, 1000);
-    } else {
-      if (timerId.current) {
-        clearInterval(timerId.current);
-      }
-    }
-
-    return () => {
-      if (timerId.current) {
-        clearInterval(timerId.current);
-      }
-    };
-  }, [isTimerRunning]); */
 
   useEffect(() => {
     if (!isTimerRunning) return;
@@ -60,3 +40,5 @@ export const Timer: FC = () => {
     setTime(START_TIMER);
   }
 };
+
+// Create the Timer. It should have buttons to start, stop and reset.
